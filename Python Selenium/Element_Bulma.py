@@ -78,9 +78,10 @@ sleep(1);
 #driver.find_element(By.CSS_SELECTOR, "btn");
 
 
-#TODO "By.XPATH" kullanımı [Genel Kapsayıcı]:                                                                                                                     7
+#TODO "By.XPATH" kullanımı [Genel Kapsayıcı]:                                                                                                                    7
 print(driver.find_element(By.XPATH, "//a").get_attribute("href"));
 #https://www.python.org/#content 
+
 
 
 driver.quit();
