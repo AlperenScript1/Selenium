@@ -5,5 +5,4 @@ Her konuyu ayrı .py dosyasında ele alıyorum, zamanla küçük otomasyon proje
 
 Ayrıca VS Code içinde kodları düzenli tutmak için şu etiketleri kullanıyorum:
 #TODO, #!, #?
-Bu etiketleri vurgulamak için şu eklentiyi öneririm:
-👉 TODO Highlight – VS Code Extension
+Bu etiketleri vurgulamak için  👉 [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments) eklentisini kullanmanızı öneririm.
