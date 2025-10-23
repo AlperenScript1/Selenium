@@ -36,10 +36,12 @@ sleep(1);
 #TODO: "minimize_window()" kullanım:                                                                    3
 driver.minimize_window();
 sleep(1);
+#! Eğer aratılan element sitenin penceresi küçük iken gözükmüyor ise selenium da bulamıyor 
 
 #TODO: "maximize_window()" kullanım:                                                                    4
 driver.maximize_window();
 sleep(1);
+#! Eğer aratılan element sitenin penceresi küçük iken gözükmüyor ise selenium da bulamıyor 
 
 #TODO: "refresh()" kullanımı:                                                                           5
 driver.refresh();
@@ -83,4 +85,5 @@ print(driver.page_source);
 
 
 #TODO: "quit()" kullanımı:                                                                             14
+
 driver.quit();
