@@ -78,10 +78,47 @@ sleep(1);
 #driver.find_element(By.CSS_SELECTOR, "btn");
 
 
-#TODO "By.XPATH" kullanımı [Genel Kapsayıcı]:                                                                                                                    7
+#TODO "By.XPATH" kullanımı [Genel Kapsayıcı]:                                                                                                                     7
 print(driver.find_element(By.XPATH, "//a").get_attribute("href"));
 #https://www.python.org/#content 
 
+
+#! XPATH
+#XPath = //tagname[@Attribute='Value']
+
+#TODO: Bunu parçalara ayırırsak:
+
+# html
+#   └── body
+#       ├── div
+#       │    └── button
+#       └── div
+#            └── button
+#! XPath, bu ağacın içinde hangi düğüme ulaşacağını tarif eder.
+
+#? // → “Herhangi bir yerden başla” anlamına gelir. Yani sayfanın neresinde olursa olsun, tagname ile eşleşen elementleri arar.
+
+#? tagname → Bulmak istediğin HTML etiketinin adı. Örnekler: div, input, button, img vs.
+
+#? [@Attribute='Value'] → Bu, belirli bir attribute’a sahip elementi seçmek için kullanılır.
+
+#? Attribute → Aradığın özellik adı, örneğin id, class, name, onclick vb.
+
+#? Value → Bu attribute’un değerini belirtirsin.
+
+#! Temel XPath Sözdizimi
+#xpath = "//tagname[@attribute='value']"
+
+#TODO: Örnek:
+#? //button[@id='submitBtn'] → Sayfada id'si submitBtn olan tüm <button> elementlerini seçer.
+
+#? //input[@name='username'] → name attribute’u username olan <input> elementini seçer.
+
+#? //div[@class='container'] → class attribute’u container olan tüm <div> elementlerini seçer.
+
+#! XPATH VE DİĞER YOLLARI KOLAY ALMAK İÇİN  selectorshub eklentisi kullanılabilir işleri kolaylaştırır.
+#TODO:https://selectorshub.com/selectorshub  
+#! (Yeni başladıysanız öğrenim aşamasında kullanmanızı önermem)
 
 
 driver.quit();
