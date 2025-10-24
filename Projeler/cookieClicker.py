@@ -24,8 +24,6 @@ try:
        selectCookie.click();
        i+=1
        print(str(i) +". defa Tıklandı :)");
-       selectCookie.click();
-       
 except:
     print("Err..");
 
