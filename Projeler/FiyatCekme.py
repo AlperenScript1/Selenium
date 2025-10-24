@@ -21,9 +21,9 @@ try:
  urun.click();
  sleep(1);
  fiyat = driver.find_element(By.CLASS_NAME, "price-item").get_attribute("innerHTML");
- print(str(fiyat));
+ print("Fiyat:" + str(fiyat));
 except:
- print("Err..");
+ print("Err.. " + str(driver));
 
 sleep(1);
 driver.quit(); 
