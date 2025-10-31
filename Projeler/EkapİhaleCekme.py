@@ -33,7 +33,7 @@ while True: #? Kırılana kadar tekrar eden döngü.
     i += 1; #= i değerini artırıyorum ki bir sonraki elemanı alabilmek için.
 
     driver.execute_script("window.scrollTo(0, document.body.scrollHeight);") #? Sayfanın en altına kaydır.
-    sleep(1); #? Yeni içerik yüklenmesi için kısa bekleme.
+    sleep(5); #! Yeni içerik yüklenmesi için bekletme (Eğer sayfa yüklenmeden bitiyorsa süreyi arttırmanız gerekir).
     
     yeni_Yukseklik = driver.execute_script("return document.body.scrollHeight"); #? Yeni yüksekliği al.
     if yeni_Yukseklik == son_Yukseklik: #? Eğer yükseklik değişmediyse, sayfanın sonuna geldik.
