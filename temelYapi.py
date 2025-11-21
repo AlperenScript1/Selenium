@@ -1,7 +1,10 @@
-from selenium import webdriver #Selenium web için gerekli driver kurulumu. 
-import chromedriver_autoinstaller #Otomatik tarayıcı sürümünü güncellemesi için gerekli kütüphane
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
+import chromedriver_autoinstaller #Otomatik tarayıcı sürümünü güncellemesi için gerekli kütüphane
+from selenium import webdriver #Selenium web için gerekli driver kurulumu. 
 from time import sleep, time
+
 
 chromedriver_autoinstaller;
 
@@ -19,3 +22,4 @@ driver.get(url); #? "driver.get() Tarayucıyı açar ve "url" değişkenine veri
 sleep(1);
 
 driver.quit(); #! Seleniumu sonlandırmak için.
+
