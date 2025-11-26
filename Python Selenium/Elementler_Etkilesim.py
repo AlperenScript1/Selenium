@@ -11,6 +11,11 @@ driver.get(url);
 driver.implicitly_wait(10);
 
 #? ".implicitly_wait(10);" → Selenium’a “Tüm element aramalarında, element DOM’da görünene kadar maksimum saniye kadar bekle” diyen global bekleme ayarıdır.
+# visibility_of_element_located → element DOM’da ve görünür olana kadar bekler
+# element_to_be_clickable → element tıklanabilir olana kadar bekler
+# presence_of_all_elements_located → birden fazla elementi DOM’da bekler
+# text_to_be_present_in_element → elementin içinde belirli bir yazı çıkana kadar bekler
+
 #! Eğer site yüklenmezse belirtilen süre içinde kodu çalıştırmaz.
 
 #? ".click()" → Buton, link, checkbox gibi elementleri tıklamak için kullanılır.                                                                                                     1
@@ -60,6 +65,7 @@ input.send_keys("Alperen");
 sleep(1);
 input.submit();
 sleep(1);
+
 
 
 driver.quit();
